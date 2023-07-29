@@ -1,0 +1,44 @@
+# compile fortran code with Intel MKL on MAC
+
+F90 = gfortran
+
+cflag = -c
+Oflag = -O2
+ompflag = -fopenmp
+
+# laplackflag = -llapack -lblas
+# laplackflag = -llapack_atlas -lptf77blas -lptcblas -latlas
+# laplackflag = -L/usr/local/lib -llapack -lopenblas
+# laplackflag = -L/usr/local/lib -lscalapack \
+#	 -L/usr/local/opt/lapack/lib -llapack \
+#	 -L/opt/OpenBLAS/lib -lopenblas
+# laplackflag = -L/usr/local/opt/lapack/lib -llapack \
+#	 -L/usr/local/opt/openblas/lib -lopenblas
+# laplackflag = -L/usr/local/opt/scalapack/lib -lscalapack \
+#  -L/usr/local/opt/lapack/lib -llapack \
+#	 -L/usr/local/opt/lapack/lib -lblas
+
+# laplackflag = -L/usr/local/lib -lscalapack /usr/local/lib/liblapack.a /usr/local/lib/libopenblas.a
+
+# laplackflag = -L/usr/local/lib -lscalapack -L/usr/local/opt/openblas/lib -lopenblas -lpthread -lgfortran
+
+# laplackflag = -L/opt/OpenBLAS/lib/ -lopenblas -L/opt/OpenBLAS/lib/ -llapack -lpthread -lgfortran
+
+# laplackflag = -L/usr/local/Cellar/scalapack/2.0.2_16/lib/ -lscalapack \
+#    -L/usr/local/opt/openblas/lib/ -lopenblas -lpthread -lgfortran
+
+# laplackflag = -llapack -lopenblas -lpthread -lgfortran
+
+laplackflag = -lscalapack-openmpi -lopenblas -lpthread -lgfortran
+
+
+
+a.out: Main_DH.o
+	$(F90) $(Oflag) $(ompflag) Main_DH.o $(laplackflag) $(realflag)
+	mv a.out run_DH
+  # Note was:  mv a.out run_DH
+
+Main_DH.o: Main_DH.f90
+	$(F90) $(cflag) $(Oflag) $(ompflag) Main_DH.f90 $(realflag)
+
+#end of makefile

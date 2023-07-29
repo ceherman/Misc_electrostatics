@@ -1,0 +1,18 @@
+The specification is: input: adh_pH_7/pqr.pqr, triangulation: VCMC, surface: MS, color: atom, surface: outer+inner, radius:  1.400, scale:  4.000, outname: adh_pH_7/pqr
+Load file...
+Initialize...
+actual boxlength 300, box[264*200*299], scale factor  2.419
+Build solvent-accessible solid
+Euclidean Distance Transform
+Build triangulated surface
+Total time 1.489 seconds
+No. vertices 221242, No. triangles 442448
+Total area 49082.671 and volume 174492.625
+Distinguish inner and outer surfaces
+Calculate cavity number...
+Cavity number is 13
+Calculate cavity area and volume...
+Cavity area 1063.082 and volume 620.147
+Calculate inner and outer atoms
+Output cavity information
+Output 3D model

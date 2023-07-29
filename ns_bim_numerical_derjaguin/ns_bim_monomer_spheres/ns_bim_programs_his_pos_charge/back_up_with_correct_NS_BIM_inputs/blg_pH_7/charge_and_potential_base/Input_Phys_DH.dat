@@ -1,0 +1,17 @@
+!Exterior medium parameters: 1/Debye length (1/nm); and Dielectric constant (relative permittivity)
+0.147065437946626d1, 78.5d0
+
+~Particle 1
+!Interior medium parameters: 1/Debye length (1/nm); and Dielectric constant (relative permittivity)
+0.0d0, 4.0d0
+
+!number of sources
+50
+~end Particle 1
+~Particle 2
+!Interior medium parameters: 1/Debye length (1/nm); and Dielectric constant (relative permittivity)
+0.0d0, 4.0d0
+
+!number of sources
+49
+~end Particle 2

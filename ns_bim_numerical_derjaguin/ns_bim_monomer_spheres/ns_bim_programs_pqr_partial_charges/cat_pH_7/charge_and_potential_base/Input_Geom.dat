@@ -1,0 +1,31 @@
+!Number of the spheres
+4
+
+~Particle 1
+!Level of mesh on sphere 1
+8
+
+!sphere radius, and centre coordinates
+1.7103369981108087, 3.6748934901462307, 3.8683134901462273, 2.549178448823908
+~end Particle 1
+~Particle 2
+!Level of mesh on sphere 2
+8
+
+!sphere radius, and centre coordinates
+1.7103369981108087, 2.278153426573429, 4.112578308963764, 6.304106293706303
+~end Particle 2
+~Particle 3
+!Level of mesh on sphere 3
+8
+
+!sphere radius, and centre coordinates
+1.7103369981108087, 2.1574011064479253, 0.741375073127305, 5.709500457840504
+~end Particle 3
+~Particle 4
+!Level of mesh on sphere 4
+8
+
+!sphere radius, and centre coordinates
+1.7103369981108087, 0.6726974958688189, 2.2442569086055713, 2.296281797381461
+~end Particle 4
